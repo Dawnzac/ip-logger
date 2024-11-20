@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP Logger</title>
+  </head>
+  <body>
+    <h1>IP Logger</h1>
+    <p>Your IP Address: <strong>{{ ip }}</strong></p>
+    <h2>Logged IPs:</h2>
+    <ul>
+      {% for ip in logged_ips %}
+      <li>{{ ip }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
